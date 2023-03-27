@@ -7,18 +7,17 @@ body {
     margin: 0;
 }
 
-.header {
+header {
     max-height: 50px;
     padding: 20px;
     display: flex;
     align-items: center;
     column-gap: 20px;
-    grid-auto-flow: column;
     justify-content: left;
     align-content: center;
 }
 
-.header > * {
+header > * {
     max-height: inherit;
     object-fit: cover;
     font-family:'Montserrat';
@@ -29,59 +28,55 @@ body {
 
 
 .splash {
+    position: relative;
+
     width: 100%;
     max-height: 80vh;
     object-fit: cover;
 }
 
-.titlediv {
+.splashtext {
     position: absolute;
-    top: 80vh;
-    left: 5vw;
-    max-height: 8vh;
-    background-color: black;
+    bottom: 16px;
+    left: 16px;
+
     padding: 20px;
     margin: 0;
     border-radius: 20px;
-}
 
-#supercontainer > div {
-    padding: 10px;
-}
-
-
-.title {
-    margin: 0;
+    background-color: black;
     color: orange;
     font-size: 20px;
 }
 
-.body {
-    padding: 40px;
-}
 
-.body > h2 {
-    font-size: 30px;
+.body {
+    padding: 20px;
+    max-width: 60vw;
 }
 
 .body > * {
     margin: 5px;
-    max-width: 60vw;
 }
+
+
+
 
 .panes {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
-    padding: 40px;
+    justify-content: center;
+    
+    gap: 2vw;
+    padding: 5vw;
     padding-top: 0;
-
 }
 
 .panes > div{
     margin: 10px;
-    width: 30vw;
-    height: 35vw;
+    width: 400px;
+    height: 500px;
     background-color: rgb(243, 236, 236);
     border-radius: 3%;
     border: 1px solid black ;
@@ -95,19 +90,19 @@ body {
     overflow: hidden;
     width: 90%;
     height: 70%;
-    overflow-x: hidden;
-    border-radius: 10%;
+    min-height: 250px;
+    border-radius: 5%;
     border: 1px solid black ;
 }
 
 .panes > div > p {
-    padding-left: 5%;
+    margin: 5%;
     margin: 10px;
     font-size: large;
 }
 
 
-.footer {
+footer {
     padding: 20px;
     column-gap: 20px;
     grid-auto-flow: row;
@@ -117,6 +112,6 @@ body {
     color:white;
 }
 
-.footer > * {
+footer > * {
     margin: 10px;
 }
